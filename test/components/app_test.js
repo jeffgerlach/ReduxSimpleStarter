@@ -9,12 +9,12 @@ describe('App' , () => {
     component = renderComponent(App);
   });
 // use 'it' to test a single attribute of a target
-  it('renders something', () => {
-    expect(component).to.exist;
+  it('shows a comment box', () => {
+    // use 'expect' to make an assertion about a target
+    expect(component.find('.comment-box')).to.exist;
   });
 
-  it('shows the correct text', () => {
-    // use 'expect' to make an assertion about a target
-    expect(component).to.contain('React simple starter');
+  it('shows a comment list', () => {
+    expect(component.find('.comment-list')).to.exist;
   });
 });
