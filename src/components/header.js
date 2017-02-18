@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 class Header extends Component {
   renderLinks() {
-    console.log(this.props.authenticated);
+    //console.log(this.props.authenticated);
     if (this.props.authenticated) {
       // show a link to sign out
       return (
@@ -30,7 +30,7 @@ class Header extends Component {
     return (
       <nav className="navbar navbar-light">
         <Link to="/" className="navbar-brand">Redux Auth</Link>
-        <ul className="nav nabvar-nav">
+        <ul className="nav navbar-nav">
           {this.renderLinks()}
         </ul>
       </nav>
